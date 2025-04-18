@@ -1,7 +1,6 @@
 import React from 'react'
 import MatchCard from './MatchCard'
-import axios from 'axios'
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const BodySection = ({ isLoaded, setLoaded, arr, setArr }) => {
 	const [startingIndex, setStartingIndex] = useState(0);
@@ -35,11 +34,11 @@ const BodySection = ({ isLoaded, setLoaded, arr, setArr }) => {
 					</button>
 				</div>
 			)}
-			{/* {<MatchCard />}
 			{<MatchCard />}
 			{<MatchCard />}
 			{<MatchCard />}
-			{<MatchCard />} */}
+			{<MatchCard />}
+			{<MatchCard />}
 		</div>
 	);
 };

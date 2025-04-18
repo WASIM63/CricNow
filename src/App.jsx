@@ -6,7 +6,7 @@ import axios from 'axios';
 import CategorySection from "./components/CategorySection";
 
 const App = () => {
-	const [isLoaded, setLoaded] = useState(true);
+	const [isLoaded, setLoaded] = useState(false);
 	const [topic, setTopic] = useState("upcomingMatches");
 	const [homeArr, setHome] = useState([]);
 	const [liveMatchesArr, setLiveMatches] = useState([]);
@@ -51,9 +51,9 @@ const App = () => {
 		}
 	}
 
-	useEffect(() => {
-		apiCall();
-	}, [topic])
+	// useEffect(() => {
+	// 	apiCall();
+	// }, [topic])
 
 	return (
 		<div className="flex flex-col justify-between space-y-2 h-full p-2">
