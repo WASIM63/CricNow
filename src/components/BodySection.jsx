@@ -2,9 +2,9 @@ import React from 'react'
 import MatchCard from './MatchCard'
 import { useState } from "react";
 
-const BodySection = ({ isLoaded, setLoaded, arr, setArr }) => {
+const BodySection = ({ isLoaded, setLoaded, arr, setArr, topic}) => {
 	const [startingIndex, setStartingIndex] = useState(0);
-
+	
 	return (
 		<div className="w-full bg-gradient-to-r from-yellow-400 via-pink-400 to-orange-400 p-2 rounded-2xl sm:flex sm:flex-wrap sm:justify-evenly">
 			{isLoaded ? (
@@ -12,11 +12,10 @@ const BodySection = ({ isLoaded, setLoaded, arr, setArr }) => {
 					<span className="p-2">Loading...</span>
 					<div className="h-[50px] w-[50px] border-4 border-[#ea11a5]-400 animate-spin ease-in-out  mx-auto"></div>
 				</div>
-			) : Array.isArray({ arr }) ? (
-				arr
-					.slice(startingIndex, startingIndex + 5)
-					.map((data, index) => <MatchCard key={index} data={data} />)
-			) : (
+			) : Array.isArray(arr) ? (
+				arr.slice(startingIndex,startingIndex+10).map((data, index) => 
+					<MatchCard key={index} {...data}/>
+			)) : (
 				<p>No upcomingMatches found.</p>
 			)}
 
@@ -34,11 +33,11 @@ const BodySection = ({ isLoaded, setLoaded, arr, setArr }) => {
 					</button>
 				</div>
 			)}
+			{/* {<MatchCard />}
 			{<MatchCard />}
 			{<MatchCard />}
 			{<MatchCard />}
-			{<MatchCard />}
-			{<MatchCard />}
+			{<MatchCard />} */}
 		</div>
 	);
 };

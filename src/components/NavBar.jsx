@@ -9,10 +9,10 @@ const NavBar = ({setTopic}) => {
 			</label>
 
 			<ul className="hidden md:flex space-x-6 text-white font-medium">
-				<li className="cursor-pointer hover:underline" onClick={setTopic('home')} >Home</li>
-				<li className="cursor-pointer hover:underline" onClick={setTopic('liveMatches')} >Live Matches</li>
-				<li className="cursor-pointer hover:underline" onClick={setTopic('upcomingMatches')}>Upcoming Matches</li>
-				<li className="cursor-pointer hover:underline" onClick={setTopic('recentMatches')}>Recent Matches</li>
+				<li className="cursor-pointer hover:underline" onClick={()=>setTopic('home')} >Home</li>
+				<li className="cursor-pointer hover:underline" onClick={()=>setTopic('liveMatches')} >Live Matches</li>
+				<li className="cursor-pointer hover:underline" onClick={()=>setTopic('upcomingMatches')}>Upcoming Matches</li>
+				<li className="cursor-pointer hover:underline" onClick={()=>setTopic('recentMatches')}>Recent Matches</li>
 			</ul>
 
 			<label htmlFor="menu" className="md:hidden">
