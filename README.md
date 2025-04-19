@@ -1,12 +1,15 @@
-# React + Vite
+# CRICNOW :
+## A Cricket live score view responsive app using React.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
++ Categorization of live matches, recent matches, upcoming matches
++ Interective and smooth UI experience using **React** along **Tailwind CSS**
++ **Responsive** website (Mobile first)
 
-Currently, two official plugins are available:
+## Github page link
+[https://wasim63.github.io/CricNow]( https://wasim63.github.io/CricNow/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Preview
+>Loading...
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> [!WARNING] \
+> Project is on developing mode
